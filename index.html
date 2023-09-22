@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
     <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
@@ -13,16 +13,18 @@
   
    <section class="section-1">
     <div class="overlay"></div>
+    <!-- <img src="images/image-header-desktop.jpg" alt="hi"> -->
       <picture>
-        <source srcset="images/image-header-desktop" media="min-width: 768px">
-        <source srcset=".images/image-header-mobile" media="min-width: 0px">
-        <img src="images/image-header-desktop.jpg" alt="Image loading....">
+        <source media="(min-width:768px)" srcset="./images/image-header-desktop.jpg" >
+        <!-- <source media="(min-width: 768px)" srcset="images/image-header-desktop.jpg">
+        <source srcset=".images/image-header-mobile" media="min-width: 0px"> -->
+        <img src="./images/image-header-desktop.jpg" alt="Image loading....">
       </picture>
    </section>
 
    <section class="section-2">
       <h1>Get <span>insights</span> that help your business grow.</h1>
-      <p>Discover the basics of data analytics and make better decisons regarding revenue, customer efficiency and overall efficiency.</p>
+      <p>Discover the benefits of data analytics and make better decisons regarding revenue, customer experience and overall efficiency.</p>
         <div class="section-stats">
           <div>
             <h1>10k+</h1>
